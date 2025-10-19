@@ -1,0 +1,128 @@
+
+	<h3> Definicao do Servidor e Base </h3>
+
+	<div id="form">
+		<form action="" method="post">
+			Servidor: <br />
+			<input type="text" name="host" value="{host}" class="text" />
+			<br /><br />
+
+			Usuario/Owner: <br />
+			<input type="text" name="user" value="{user}" class="text" />
+			<br /><br />
+
+			Senha: <br />
+			<input type="password" name="pass" value="{pass}" class="text" />
+			<br /><br />
+
+			Base: <br />
+			<input type="text" name="base" value="{base}" class="text" />
+			<br /><br />
+
+			Tipo: <br />
+			<select name="tipo">
+				<option value="mysql" selected {selmys}>MySQL</option>
+				<option value="oracle" {selora}>Oracle</option>
+				<option value="mssql" {selsql}>Sql Server</option>
+			</select>
+			<br /><br />
+
+			<input type="submit" name="sub1" value="Conectar" />
+		</form>
+		<br>
+		Bases Disponíveis: <br />
+		<select name="base">
+			<!-- START BLOCK : bases -->
+			<option {sel}>{bas}</option>
+			<!-- END BLOCK : bases -->
+		</select>
+	</div>
+
+	<div id="info">
+	<!-- START BLOCK : selecionar-table -->
+
+		<h4>Gerar o "Object Relational Mapping"</h4>
+		<form action="../_controller/execMOR.php" method="post">
+			<select name="tab">
+            	<option value="%">Todas as Tabelas</option>
+				<!-- START BLOCK : tabelas1 -->
+				<option>{tab}</option>
+				<!-- END BLOCK : tabelas1 -->
+			</select>
+			<br />
+			<input type="submit" name="sub" value="Gerar Entity" />
+            <input type="checkbox" name="exp" value="sim" /> Exportar?
+			<input type="hidden" name="host" value="{host}" />
+			<input type="hidden" name="user" value="{user}" />
+			<input type="hidden" name="pass" value="{pass}" />
+			<input type="hidden" name="base" value="{base}" />
+			<input type="hidden" name="tipo" value="{tipo}" />
+		</form>
+
+		<br /><br />
+
+		<h4>Gerar o "Data Access Object"</h4>
+		<form action="../_controller/execDAO.php" method="post">
+			<select name="tab">
+            	<option value="%">Todas as Tabelas</option>
+				<!-- START BLOCK : tabelas2 -->
+				<option>{tab}</option>
+				<!-- END BLOCK : tabelas2 -->
+			</select>
+			<br />
+			<input type="submit" name="sub" value="Gerar DAO" />
+            <input type="checkbox" name="exp" value="sim" /> Exportar?
+			<input type="hidden" name="host" value="{host}" />
+			<input type="hidden" name="user" value="{user}" />
+			<input type="hidden" name="pass" value="{pass}" />
+			<input type="hidden" name="base" value="{base}" />
+			<input type="hidden" name="tipo" value="{tipo}" />
+		</form>
+
+	<!-- END BLOCK : selecionar-table -->
+	</div>
+
+
+	<div id="info">
+		<!-- START BLOCK : selecionar-view -->
+	
+			<h4>Gerar o "Object Relational Mapping"</h4>
+			<form action="../_controller/execMOR.php" method="post">
+				<select name="viw">
+					<option value="%">Todas as Views</option>
+					<!-- START BLOCK : views1 -->
+					<option>{viw}</option>
+					<!-- END BLOCK : views1 -->
+				</select>
+				<br />
+				<input type="submit" name="sub" value="Gerar Entity" />
+				<input type="checkbox" name="exp" value="sim" /> Exportar?
+				<input type="hidden" name="host" value="{host}" />
+				<input type="hidden" name="user" value="{user}" />
+				<input type="hidden" name="pass" value="{pass}" />
+				<input type="hidden" name="base" value="{base}" />
+				<input type="hidden" name="tipo" value="{tipo}" />
+			</form>
+	
+			<br /><br />
+	
+			<h4>Gerar o "Data Access Object"</h4>
+			<form action="../_controller/execDAO.php" method="post">
+				<select name="viw">
+					<option value="%">Todas as Views</option>
+					<!-- START BLOCK : views2 -->
+					<option>{viw}</option>
+					<!-- END BLOCK : views2 -->
+				</select>
+				<br />
+				<input type="submit" name="sub" value="Gerar DAO" />
+				<input type="checkbox" name="exp" value="sim" /> Exportar?
+				<input type="hidden" name="host" value="{host}" />
+				<input type="hidden" name="user" value="{user}" />
+				<input type="hidden" name="pass" value="{pass}" />
+				<input type="hidden" name="base" value="{base}" />
+				<input type="hidden" name="tipo" value="{tipo}" />
+			</form>
+	
+		<!-- END BLOCK : selecionar-view -->
+		</div>

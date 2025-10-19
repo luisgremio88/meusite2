@@ -1,0 +1,160 @@
+
+		<section class="breadcrumbs-area gray-bg ptb-50 port bread-card solid-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="breadcrumbs">
+                            <h2 class="page-title">Gestão - Colaboradores</h2>
+                            <ul>
+                                <li>
+                                    <a class="active" href="workers">Colaboradores</a>
+                                </li>
+                                <li>Atualização de Colaborador</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-area ptb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 pt-30">
+                        <h3>Revise os Dados e Confirme a Atualização</h3>
+
+                        <a href="workers">&laquo; Voltar</a>
+                        <br><br>
+
+                        <form id="contact-form" action="./action/workers.act" method="post">
+                            <input type="hidden" name="idt" value="{idt}">
+                            <input type="hidden" name="idu" value="{idu}">
+                            <input type="hidden" name="act" value="{act}">
+                            <input type="hidden" name="pag" value="workers">
+                            
+                            <div class="row mb-20">
+                                <div class="col-md-3">
+                                    <div class="main-input">
+                                        <label>Nome</label>
+                                        <input type="text" name="nom" id="nom" placeholder="" value="{nom}">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="main-input">
+                                        <label>CPF</label>
+                                        <input type="text" name="cpf" id="cpf" placeholder="" value="{cpf}">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="main-input">
+                                        <label>Data Nascimento</label>
+                                        <input type="text" name="nas" id="nas" placeholder="00/00/0000" value="{nas}">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-20">
+                                <div class="col-md-3">
+                                    <div class="main-input">
+                                        <label>Email</label>
+                                        <input type="text" name="ema" id="ema" placeholder="" value="{ema}">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="main-input">
+                                        <label>Telefone</label>
+                                        <input type="text" name="tel" id="tel" placeholder="" value="{tel}">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="main-input">
+                                        <label>Página Web</label>
+                                        <input type="text" name="web" id="web" placeholder="www..." value="{web}">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4 class="main-contact mt-10">Senha de Acesso</h4>
+                            <div class="row mb-20">
+                                <div class="col-md-3">
+                                    <div class="main-input">
+                                        <label>Senha (mín 6 dígitos - letras e números)</label>
+                                        <input type="text" name="se1" id="se1" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="main-input">
+                                        <label>Repita a senha</label>
+                                        <input type="text" name="se2" id="se2" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4 class="main-contact mt-10">Endereço</h4>
+                            <div class="row mb-20">
+                                <div class="col-md-3">
+                                    <div class="main-input">
+                                        <label>CEP</label>
+                                        <input type="text" name="cep" id="cep" placeholder="" value="{cep}">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="main-input">
+                                        <label>Rua / Av / etc</label>
+                                        <input type="text" name="end" id="end" placeholder="" value="{end}">
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="main-input">
+                                        <label>Número</label>
+                                        <input type="text" name="nro" id="nro" placeholder="" value="{nro}">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="main-input">
+                                        <label>Complem.</label>
+                                        <input type="text" name="com" id="com" placeholder="" value="{com}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-20">
+                                <div class="col-md-3">
+                                    <div class="main-input">
+                                        <label>Bairro</label>
+                                        <input type="text" name="bai" id="bai" placeholder="" value="{bai}">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="main-input">
+                                        <label>Cidade</label>
+                                        <input type="text" name="cid" id="cid" placeholder="" value="{cid}">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="main-input">
+                                        <label>Estado</label>
+                                        <input type="text" name="est" id="est" placeholder="UF" value="{est}">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+                            <div class="row mb-20">
+                                <div class="col-md-3">
+                                    <div class="main-input">
+                                        <button type="submit">Atualizar Colaborador</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="form-messege"></p>
+                    </div>
+
+                    <div class="col-md-12 pt-30">
+                        <div class="contact-area-all">
+                            <div id="hastech2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>

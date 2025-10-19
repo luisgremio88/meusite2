@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>CTRL-F Functionality</title> 
+    <style> 
+        .highlight { 
+            background-color: yellow; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <input type="text" id="searchInput" placeholder="Search..."> 
+    <div id="content"> 
+        <h3>Agora vai um titulo pra veer qual e</h3>
+        <p>This is a sample text for testing the search functionality. Try searching for specific words.</p> 
+        <br/>
+        <p>Another paragraph to search through.</p> 
+        <br/>
+
+        <h3>Agora vai um titulo pra veer qual e</h3>
+        <p>This is a sample text for testing the search functionality. Try searching for specific words.</p> 
+        <p>Another paragraph to search through.</p> 
+        <br/>
+
+        <h3>Agora vai um titulo pra veer qual e</h3>
+        <p>This is a sample text for testing the search functionality. Try searching for specific words.</p> 
+        <p>Another paragraph to search through.</p> 
+    </div> 
+
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function() { 
+            const searchTerm = this.value; 
+            const content = document.getElementById('content'); 
+            
+            // Clear previous highlights 
+            clearHighlights(content); 
+        
+            if (searchTerm) { 
+                highlightText(content, searchTerm); 
+            } 
+        }); 
+        
+        function highlightText(container, searchTerm) { 
+            const regex = new RegExp(`(${searchTerm})`, 'gi'); 
+            container.innerHTML = container.innerHTML.replace(regex, '<span class="highlight">$1</span>'); 
+        } 
+        
+        function clearHighlights(container) { 
+            container.innerHTML = container.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/g, '$1'); 
+        } 
+    </script> 
+</body> 
+</html> 

@@ -1,0 +1,79 @@
+
+        <section class="breadcrumbs-area gray-bg ptb-50 port bread-card solid-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="breadcrumbs">
+                            <h2 class="page-title">Gestão - Colaboradores</h2>
+                            <ul>
+                                <li>
+                                    <a class="active" href="workers">Colaboradores</a>
+                                </li>
+                                <li>Permissões de Acesso - Itens de Menu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		<section class="contact-area ptb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 pt-30">
+                        <h3>{nom}</h3>
+                        <h4>{cpf} - {ema} - {tel}</h4>
+                        
+                        <a href="workers">&laquo; Voltar</a>
+                        <br><br>
+
+                        <form action="./action/workers.act" method="post">
+                            <input type="hidden" name="act" value="{act}">
+                            <input type="hidden" name="idu" value="{idu}">
+                            <input type="hidden" name="idt" value="{idt}">
+                            <input type="hidden" name="tok" value="{tok}">
+                            <input type="hidden" name="pag" value="workers">
+
+                            <table class="table table-striped table-hover table-responsive">
+                                <tr>
+                                    <th class="text-center">Selecione</th>
+                                    <th>Opção de Acesso</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="per[]" value="1-home" {chkini}></td>
+                                    <td>Página Inicial</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="per[]" value="2-testamentos" {chktes}></td>
+                                    <td>Central de Testamentos</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="per[]" value="3-conteudos" {chkcon}></td>
+                                    <td>Documentos e Conteúdos</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="per[]" value="4-eventos" {chkeve}></td>
+                                    <td>Eventos</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="per[]" value="5-gestao" {chkges}></td>
+                                    <td>Gestão</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="per[]" value="6-financeiro" {chkfin}></td>
+                                    <td>Financeiro</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><button>Gravar Permissão</button></td>
+                                </tr>
+                            </table>
+                        </form>
+
+                        <!-- START BLOCK : bug -->
+                        {msg}
+                        <!-- END BLOCK : bug -->
+                    </div>
+                </div>
+            </div>
+        </section>

@@ -1,0 +1,105 @@
+
+		<section class="breadcrumbs-area gray-bg ptb-50 port bread-card solid-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="breadcrumbs">
+                            <h2 class="page-title">Nova Busca - 2. Quem Pesquisar</h2>
+                            <ul>
+                                <li>
+                                    <a class="active" href="#">Home</a>
+                                </li>
+                                <li>Dados para Pesquisar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-area ptb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="conract-area-bottom">
+                            <h3 class="main-contact">Dados para Pesquisa</h3>
+                            <form action="search-pay" method="post">
+                                <input type="hidden" name="idt" id="idt" value="{idt}">
+                                <input type="hidden" name="idc" id="idc" value="{idc}">
+                                <input type="hidden" name="idb" id="idb" value="{idb}">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row mb-20">
+                                            <div class="col-md-12 mb-20">
+                                                <div class="main-input">
+                                                    <input type="text" name="nom" placeholder="Nome Pesquisado" id="nom">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-20">
+                                                <div class="main-input">
+                                                    <input type="text" name="cpf" placeholder="CPF" id="cpf">
+                                                </div>
+                                            </div>
+                                            <!-- <div class="col-md-12 mb-20">
+                                                <div class="main-input">
+                                                    <textarea name="obs" rows="3" placeholder="Observações"></textarea>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row mb-20">
+                                            <div class="col-md-6">
+                                                Já é falecido? 
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="fal" value="1" id="falsim" checked>SIM / 
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="fal" value="0" id="falnao">NÃO
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-20" id="faldiv">
+                                            <div class="col-md-3">
+                                                <div class="main-input">
+                                                    <input type="date" name="dat" placeholder="Data" id="dat">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="main-input">
+                                                    <input type="text" name="liv" placeholder="Livro" id="liv">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="main-input">
+                                                    <input type="text" name="fol" placeholder="Folha" id="fol">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="main-input">
+                                                    <input type="text" name="tes" placeholder="Nro Óbito" id="tes">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-20">
+                                    <div class="col-md-12">
+                                        <div class="text-leave2 text-right">
+                                            <button type="submit" class="submit">Prosseguir (pagamento)</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <p class="form-messege"></p>
+                        </div>
+
+                        <!-- START BLOCK : bug -->
+                        {msg}
+                        <!-- END BLOCK : bug -->
+                    </div>
+                </div>
+            </div>
+        </section>

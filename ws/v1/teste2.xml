@@ -1,0 +1,110 @@
+<?xml version="1.0" standalone="yes" ?>
+<NewDataSet>
+	<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Testamento" msdata:UseCurrentLocale="true">
+			<xs:complexType>          
+				<xs:choice minOccurs="0" maxOccurs="unbounded">            
+					<xs:element name="Testamento">              
+						<xs:complexType>                
+							<xs:sequence>                  
+								<xs:element name="TipoTestamento" type="xs:string" minOccurs="0" />                  
+								<xs:element name="Nome" type="xs:string" minOccurs="0" />                  
+								<xs:element name="DataNascimento" type="xs:dateTime" minOccurs="0" />                  
+								<xs:element name="TipoDocumento" type="xs:string" minOccurs="0" />                  
+								<xs:element name="Documento" type="xs:string" minOccurs="0" />                  
+								<xs:element name="DocumentoComplemento" type="xs:string" minOccurs="0" />                  
+								<xs:element name="Cpf" type="xs:string" minOccurs="0" />                  
+								<xs:element name="NomeMae" type="xs:string" minOccurs="0" />                  
+								<xs:element name="NomePai" type="xs:string" minOccurs="0" />                  
+								<xs:element name="DataTestamento" type="xs:dateTime" minOccurs="0" />                  
+								<xs:element name="Livro" type="xs:int" minOccurs="0" />                  
+								<xs:element name="LivroComplemento" type="xs:string" minOccurs="0" />                  
+								<xs:element name="Folha" type="xs:int" minOccurs="0" />                  
+								<xs:element name="FolhaComplemento" type="xs:string" minOccurs="0" />                  
+								<xs:element name="Observacoes" type="xs:string" minOccurs="0" />                  
+								<xs:element name="RevogacaoUF" type="xs:string" minOccurs="0" />                  
+								<xs:element name="RevogacaoCidade" type="xs:string" minOccurs="0" />                  
+								<xs:element name="RevogacaoCartorio" type="xs:string" minOccurs="0" />                  
+								<xs:element name="RevogacaoLivro" type="xs:int" minOccurs="0" />                  
+								<xs:element name="RevogacaoLivroComplemento" type="xs:string" minOccurs="0" />                  
+								<xs:element name="RevogacaoFolha" type="xs:int" minOccurs="0" />                  
+								<xs:element name="RevogacaoFolhaComplemento" type="xs:string" minOccurs="0" />                  
+								<xs:element name="RevogacaoDataTestamento" type="xs:dateTime" minOccurs="0" />                  
+								<xs:element name="DesconhecidoOutros" type="xs:string" minOccurs="0" />                
+							</xs:sequence>              
+						</xs:complexType>            
+					</xs:element>          
+				</xs:choice>        
+			</xs:complexType>      
+		</xs:element>    
+	</xs:schema>    
+	<Testamento>        
+		<TipoTestamento>4</TipoTestamento>        
+		<Nome>MARIA DO CARMO ROSSI ABBOTT</Nome>        
+		<DataNascimento>1941-04-15</DataNascimento>        
+		<TipoDocumento>RG</TipoDocumento>        
+		<Documento>3017069992</Documento>        
+		<DocumentoComplemento>SSPRS</DocumentoComplemento>        
+		<Cpf>00251739015</Cpf>        
+		<NomeMae>LEA LIBERATA ROSSI ABBOTT</NomeMae>        
+		<NomePai>MARIO ABBOTT</NomePai>        
+		<DataTestamento>2017-06-19</DataTestamento>        
+		<Livro>9</Livro>        
+		<LivroComplemento>TESTAMENTOS (LTM)</LivroComplemento>        
+		<Folha>111</Folha>        
+		<FolhaComplemento></FolhaComplemento>        
+		<Observacoes></Observacoes>        
+		<RevogacaoUF></RevogacaoUF>        
+		<RevogacaoCidade></RevogacaoCidade>        
+		<RevogacaoCartorio></RevogacaoCartorio>        
+		<RevogacaoLivroComplemento></RevogacaoLivroComplemento>        
+		<RevogacaoFolhaComplemento></RevogacaoFolhaComplemento>        
+		<DesconhecidoOutros></DesconhecidoOutros>    
+	</Testamento>    
+	<Testamento>        
+		<TipoTestamento>4</TipoTestamento>        
+		<Nome>NARA LEONOR CASTRO GARCIA</Nome>        
+		<DataNascimento>1955-09-13</DataNascimento>        
+		<TipoDocumento>RG</TipoDocumento>        
+		<Documento>553P      TJRS</Documento>        
+		<DocumentoComplemento>SSPRS</DocumentoComplemento>        
+		<Cpf>22858750025</Cpf>        
+		<NomeMae>CRISTINA CASTRO GARCIA</NomeMae>        
+		<NomePai>LUIZ CAVALHEIRO GARCIA</NomePai>        
+		<DataTestamento>2017-06-22</DataTestamento>        
+		<Livro>9</Livro>        
+		<LivroComplemento>TESTAMENTOS (LTM)</LivroComplemento>        
+		<Folha>112</Folha>        
+		<FolhaComplemento></FolhaComplemento>        
+		<Observacoes></Observacoes>        
+		<RevogacaoUF></RevogacaoUF>        
+		<RevogacaoCidade></RevogacaoCidade>        
+		<RevogacaoCartorio></RevogacaoCartorio>        
+		<RevogacaoLivroComplemento></RevogacaoLivroComplemento>        
+		<RevogacaoFolhaComplemento></RevogacaoFolhaComplemento>        
+		<DesconhecidoOutros></DesconhecidoOutros>    
+	</Testamento>    
+	<Testamento>        
+		<TipoTestamento>5</TipoTestamento>        
+		<Nome>NARA ALVES DOS SANTOS</Nome>        
+		<DataNascimento>1933-05-23</DataNascimento>        
+		<TipoDocumento>RG</TipoDocumento>        
+		<Documento>6001079877</Documento>        
+		<DocumentoComplemento>SSPRS</DocumentoComplemento>        
+		<Cpf>00614939020</Cpf>        
+		<NomeMae>VILMA ALVES DOS SANTOS</NomeMae>        
+		<NomePai>PEDRO EMILIO DOS SANTOS</NomePai>        
+		<DataTestamento>2017-06-29</DataTestamento>        
+		<Livro>9</Livro>        
+		<LivroComplemento>TESTAMENTOS (LTM)</LivroComplemento>        
+		<Folha>113</Folha>        
+		<FolhaComplemento></FolhaComplemento>        
+		<Observacoes></Observacoes>        
+		<RevogacaoUF></RevogacaoUF>        
+		<RevogacaoCidade></RevogacaoCidade>        
+		<RevogacaoCartorio></RevogacaoCartorio>        
+		<RevogacaoLivroComplemento></RevogacaoLivroComplemento>        
+		<RevogacaoFolhaComplemento></RevogacaoFolhaComplemento>        
+		<DesconhecidoOutros></DesconhecidoOutros>    
+	</Testamento>  
+</NewDataSet>

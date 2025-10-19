@@ -1,0 +1,86 @@
+
+        <section class="breadcrumbs-area gray-bg ptb-50 port bread-card solid-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="breadcrumbs">
+                            <h2 class="page-title">Lista Geral de Testamentos</h2>
+                            <ul>
+                                <li>
+                                    <a class="active" href="home">Home</a>
+                                </li>
+                                <li>Testamentos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		<section class="contact-area ptb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form id="contact-form" action="" method="get">
+                            <h3>Filtros</h3>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="main-input mb-20">
+                                        <input name="nom" placeholder="Nome" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="main-input mb-20">
+                                        <input name="cpf" placeholder="CPF" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="main-input mb-20">
+                                        <input name="dti" value="2025-01-01" type="date">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="main-input mb-20">
+                                        <input name="dtf" value="2025-04-23" type="date">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="text-leave2 mb-20">
+                                        <button class="submit" type="submit">Pesquisar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="form-messege"></p>
+                    </div>
+
+                    <div class="col-md-12 pt-30">
+                        <h2>LISTA DE TESTAMENTOS do Tabelionato</h2>
+                        <table class="table table-striped table-hover table-responsive">
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome</th>
+                                <th>CPF</th>
+                                <th>Livro</th>
+                                <th>Folha</th>
+                                <th>Detalhes</th>
+                            </tr>
+                            <!-- START BLOCK : testamentos -->
+                            <tr>
+                                <td>{idtt}</td>
+                                <td>{nom}</td>
+                                <td>{cpf}</td>
+                                <td>{liv}</td>
+                                <td>{fol}</td>
+                                <td><a href="testament-details?id={idtt}">[ +Det ]</a></td>
+                            </tr>
+                            <!-- END BLOCK : testamentos -->
+                        </table>
+
+                        <!-- START BLOCK : bug -->
+                        {msg}
+                        <!-- END BLOCK : bug -->
+                    </div>
+                </div>
+            </div>
+        </section>

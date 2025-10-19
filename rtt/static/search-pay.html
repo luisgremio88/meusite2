@@ -1,0 +1,69 @@
+
+<section class="breadcrumbs-area gray-bg ptb-50 port bread-card solid-color">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="breadcrumbs">
+                    <h2 class="page-title">Nova Busca - 3. Pagamento</h2>
+                    <ul>
+                        <li>
+                            <a class="active" href="#">Home</a>
+                        </li>
+                        <li>Pagamento</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-area ptb-30">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="conract-area-bottom">
+                    <h3 class="main-contact">Termo de Responsabilidade sobre o Valor a ser Pago</h3>
+                    <form id="search-form" action="search-res" method="post">
+                        <input type="hidden" name="idt" id="idt" value="{idt}">
+                        <input type="hidden" name="idc" id="idc" value="{idc}">
+                        <input type="hidden" name="idb" id="idb" value="{idb}">
+
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label class="checkbox">
+                                    <input type="checkbox" name="pay" value="1">
+                                </label>
+                            </div>
+                            <div class="col-md-10">
+                                Pelo presente responsabilizo-me integralmente e a qualquer tempo pela solicitação de informação e pela adequada utilização 
+                                das informações que tiver acesso junto ao Arquivo Central de Testamentos do Colégio Notarial do Brasil – Secção do Rio Grande do Sul. 
+                                Ciente de que as informações fornecidas deverão atender o que dispõe o art. 582 da Consolidação Normativa Notarial e Registral – CGJ/RS, 
+                                ficando responsável junto ao CNB/RS, inclusive quanto ao valor do preço do serviço.
+                            </div>
+                        </div>
+
+                        <div class="row mb-20">
+                            <div class="col-md-12">
+                                <div class="text-leave2 text-right">
+                                    <button type="submit" class="submit" id="btnNext">Prosseguir (resultado)</button>
+                                    <script>
+                                        const botao = document.getElementById("btnNext");
+                                        botao.addEventListener("click", function() {
+                                          botao.textContent = "Aguarde..."; 
+                                          //botao.disabled = true; 
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="form-messege"></p>
+                </div>
+
+                <!-- START BLOCK : bug -->
+                {msg}
+                <!-- END BLOCK : bug -->
+            </div>
+        </div>
+    </div>
+</section>

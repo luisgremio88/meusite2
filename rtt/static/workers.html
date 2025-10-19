@@ -1,0 +1,64 @@
+
+        <section class="breadcrumbs-area gray-bg ptb-50 port bread-card solid-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="breadcrumbs">
+                            <h2 class="page-title">Gestão - Colaboradores</h2>
+                            <ul>
+                                <li>
+                                    <a class="active" href="home">Home</a>
+                                </li>
+                                <li>Colaboradores</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		<section class="contact-area ptb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 pt-30">
+                        <h3>GERENCIAMENTO DOS COLABORADORES</h3>
+                        
+                        <a href="workers-insert">Cadastrar Novo Colaborador</a>
+                        <br><br>
+
+                        <table class="table table-striped table-hover table-responsive">
+                            <tr>
+                                <th>ID</th>
+                                <th>CPF</th>
+                                <th>Nome</th>
+                                <th>E-mail</th>
+                                <th>Telefone</th>
+                                <th>Data Nasc</th>
+                                <th>Ações</th>
+                            </tr>
+                            <!-- START BLOCK : users -->
+                            <tr>
+                                <td>{idu}</td>
+                                <td>{cpf}</td>
+                                <td>{nom}</td>
+                                <td>{ema}</td>
+                                <td>{tel}</td>
+                                <td>{nas}</td>
+                                <td>
+                                    <a href="workers-access?idu={idu}">[ P ]</a> 
+                                    : 
+                                    <a href="workers-update?idu={idu}">[ A ]</a> 
+                                    : 
+                                    <a href="javascript:;">[ X ]</a>
+                                </td>
+                            </tr>
+                            <!-- END BLOCK : users -->
+                        </table>
+
+                        <!-- START BLOCK : bug -->
+                        {msg}
+                        <!-- END BLOCK : bug -->
+                    </div>
+                </div>
+            </div>
+        </section>

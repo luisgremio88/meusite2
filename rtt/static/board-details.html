@@ -1,0 +1,91 @@
+
+        <section class="breadcrumbs-area gray-bg ptb-50 port bread-card solid-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="breadcrumbs">
+                            <h2 class="page-title">Pautas/Atas de Reuniões</h2>
+                            <ul>
+                                <li>
+                                    <a class="active" href="board">Pautas/Atas de Reuniões</a>
+                                </li>
+                                <li>Detalhes da Pauta e Ata</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		<section class="contact-area ptb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="blog-details-left">
+                            <div class="blog-part">
+                                <div class="blog-info">
+                                    <div class="blog-meta mb-30">
+                                        <span>
+                                            <i class="fa fa-cog"></i>
+                                            {idp}
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-calendar"></i>
+                                            {dat}
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-clock-o"></i>
+                                            {hor}
+                                        </span>
+                                    </div>
+                                    <h2>{tit}</h2>
+                                    <p>{txt}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-20">
+                            <div class="col-md-6">
+                                <!-- START BLOCK : video -->
+                                <h3><a href="{vid}" target="_blank"><i class="fa fa-youtube"></i> Ver vídeo</a></h3>
+                                <!-- END BLOCK : video -->
+                                <!-- START BLOCK : no-video -->
+                                Nenhum vídeo cadastrado.
+                                <!-- END BLOCK : no-video -->
+                            </div>
+                            <div class="col-md-6">
+                                <!-- START BLOCK : anexo -->
+                                <h3><a href="../../pdf/{anx}" target="_blank"><i class="fa fa-file-pdf-o"></i> Ver anexo</a></h3>
+                                <!-- END BLOCK : anexo -->
+                                <!-- START BLOCK : no-anexo -->
+                                Nenhum anexo cadastrado.
+                                <!-- END BLOCK : no-anexo -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="blog-right-sidebar">
+                            <div class="blog-right-sidebar-top mt-70">
+                                <h3 class="leave-comment-text">Reuniões Anteriores</h3>
+                                <ul>
+                                    <!-- START BLOCK : pautas-ant -->
+                                    <li>
+                                        <span>{dat}</span>
+                                        <a href="board-details?id={idp}">{tit}</a>
+                                    </li>
+                                    <!-- END BLOCK : pautas-ant -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- START BLOCK : bug -->
+                <div class="row">
+                    <div class="col-md-12 pt-30">
+                        {msg}
+                    </div>
+                </div>
+                <!-- END BLOCK : bug -->
+                
+            </div>
+        </section>

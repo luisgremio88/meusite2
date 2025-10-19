@@ -1,0 +1,62 @@
+
+		<section class="breadcrumbs-area gray-bg ptb-50 port bread-card solid-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="breadcrumbs">
+                            <h2 class="page-title">Nova Busca - 4. Resultado</h2>
+                            <ul>
+                                <li>
+                                    <a class="active" href="#">Home</a>
+                                </li>
+                                <li>Resultado</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-area ptb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="conract-area-bottom">
+                            <h3 class="main-contact">Termo de Responsabilidade sobre o Valor a ser Pago</h3>
+                            <form id="search-form" action="search-res" method="post">
+                                <input type="hidden" name="idt" id="idt" value="{idt}">
+                                <input type="hidden" name="idc" id="idc" value="{idc}">
+                                <input type="hidden" name="idb" id="idb" value="{idb}">
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        Resultado: <br>
+
+                                        <!-- START BLOCK : temresponsa -->
+                                        - mostrar link do recibo <br>
+                                        <a href="{rec}" target="_blank">Recibo</a>
+                                        <br><br>
+
+                                        - mostrar link da certidão <br>
+                                        <a href="{cer}" target="_blank">Certidão</a>
+                                        <br><br>
+                                        <!-- END BLOCK : temresponsa -->
+
+                                        <!-- START BLOCK : temboleto -->
+                                        - mostrar o boleto <br>
+                                        <a href="./action/boleto-exec?act={act}&bid={bid}" target="_blank">Boleto</a>
+                                        <br><br>
+                                        <!-- END BLOCK : temboleto -->
+                                    </div>
+                                </div>
+                            </form>
+                            <p class="form-messege"></p>
+                        </div>
+
+                        <!-- START BLOCK : bug -->
+                        {msg}
+                        <!-- END BLOCK : bug -->
+                    </div>
+                </div>
+            </div>
+        </section>

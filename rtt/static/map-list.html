@@ -1,0 +1,91 @@
+
+        <section class="breadcrumbs-area gray-bg ptb-50 port bread-card solid-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="breadcrumbs">
+                            <h2 class="page-title">Mapas dos Meses Anteriores</h2>
+                            <ul>
+                                <li>
+                                    <a class="active" href="home">Home</a>
+                                </li>
+                                <li>Mapas Anteriores</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		<section class="contact-area ptb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form id="contact-form" action="" method="get">
+                            <h3>Filtros</h3>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="main-input mb-20">
+                                        <input name="ano" placeholder="Ano" type="text" value="{ano}">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="main-input mb-20">
+                                        <select name="mes">
+                                            <option value="" {selt}>Todos os meses</option>
+                                            <option value="1" {sel1}>Janeiro</option>
+                                            <option value="2" {sel2}>Fevereiro</option>
+                                            <option value="3" {sel3}>Março</option>
+                                            <option value="4" {sel4}>Abril</option>
+                                            <option value="5" {sel5}>Maio</option>
+                                            <option value="6" {sel6}>Junho</option>
+                                            <option value="7" {sel7}>Julho</option>
+                                            <option value="8" {sel8}>Agosto</option>
+                                            <option value="9" {sel9}>Setembro</option>
+                                            <option value="10" {sel10}>Outubro</option>
+                                            <option value="11" {sel11}>Novembro</option>
+                                            <option value="12" {sel12}>Dezembro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="text-leave2 mb-20">
+                                        <button class="submit" type="submit">Pesquisar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="form-messege"></p>
+                    </div>
+
+                    <div class="col-md-12 pt-30">
+                        <h2>LISTA DE MAPAS do Filtro</h2>
+                        <table class="table table-striped table-hover table-responsive">
+                            <tr>
+                                <th>ID</th>
+                                <th>Ano</th>
+                                <th>Mes</th>
+                                <th>Permite Excluir</th>
+                                <th>Cadastro Manual</th>
+                                <th>Detalhes</th>
+                            </tr>
+                            <!-- START BLOCK : mapas -->
+                            <tr>
+                                <td>{idm}</td>
+                                <td>{ano}</td>
+                                <td>{mes}</td>
+                                <td>{del}</td>
+                                <td>{man}</td>
+                                <td><a href="map-details?id={idm}&m={ims}&a={ano}">[ +Det ]</a></td>
+                            </tr>
+                            <!-- END BLOCK : mapas -->
+                            <!-- START BLOCK : no-mapas -->
+                            <tr>
+                                <td colspan="6">Nenhum mapa encontrado</td>
+                            </tr>
+                            <!-- END BLOCK : no-mapas -->
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>

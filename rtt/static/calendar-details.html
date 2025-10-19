@@ -1,0 +1,81 @@
+
+        <section class="breadcrumbs-area gray-bg ptb-50 port bread-card solid-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="breadcrumbs">
+                            <h2 class="page-title">Detalhes do Evento</h2>
+                            <ul>
+                                <li>
+                                    <a class="active" href="calendar">Agenda</a>
+                                </li>
+                                <li>Detalhes do Evento</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		<section class="contact-area ptb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="blog-details-left">
+                            <div class="blog-part">
+                                <div class="blog-info">
+                                    <div class="blog-meta mb-30">
+                                        <span>
+                                            <i class="fa fa-cog"></i>
+                                            {ide}
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-calendar"></i>
+                                            {dat}
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-clock-o"></i>
+                                            {hor}
+                                        </span>
+                                    </div>
+                                    <h2>{tit}</h2>
+                                    <p>{txt}</p>
+                                    <p>
+                                        <button>Fazer Inscrição</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="blog-right-sidebar">
+                            <div class="blog-right-sidebar-top mt-70">
+                                <h3 class="leave-comment-text">Últimas Notícias</h3>
+                                <ul>
+                                    <!-- START BLOCK : eves -->
+                                    <li>
+                                        <span>{dat}</span> - <a href="calendar-details?id={ide}">{tit}</a>
+                                    </li>
+                                    <!-- END BLOCK : eves -->
+                                    <!-- START BLOCK : no-eves -->
+                                    <li>
+                                        <span>00/00/0000</span> - Nenhum Curso ou Evento
+                                    </li>
+                                    <!-- END BLOCK : no-eves -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- START BLOCK : bug -->
+                <div class="row">
+                    <div class="col-md-12 pt-30">
+                        {msg}
+                    </div>
+                </div>
+                <!-- END BLOCK : bug -->
+                
+            </div>
+        </section>

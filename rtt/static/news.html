@@ -1,0 +1,91 @@
+
+        <section class="breadcrumbs-area gray-bg ptb-50 port bread-card solid-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="breadcrumbs">
+                            <h2 class="page-title">Notícias Restritas ao Associado</h2>
+                            <ul>
+                                <li>
+                                    <a class="active" href="home">Home</a>
+                                </li>
+                                <li>Notícias</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		<section class="contact-area ptb-30">
+            <div class="container">
+                <div class="row mb-30">
+                    <div class="col-md-12">
+                        <form id="contact-form" action="" method="get">
+                            <h3>Filtros</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="main-input mb-20">
+                                        <span>Procurar pelo título (ou parte dele)</span>
+                                        <input name="tit" type="text" value="{tit}">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="main-input mb-20"> 
+                                        <span>Data Inicial</span>
+                                        <input name="dti" value="{dti}" type="date">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="main-input mb-20">
+                                        <span>Data Final</span>
+                                        <input name="dtf" value="{dtf}" type="date">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="text-leave2 mb-20">
+                                        <span><br></span>
+                                        <button class="submit" type="submit">Pesquisar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="form-messege"></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- START BLOCK : noticias-rows -->
+                    <div class="grid">
+                        <!-- START BLOCK : noticias-cols -->
+						<div class="col-md-3 col-sm-6 col-xs-12 grid-item">
+							<div class="portfolio">
+								<div class="portfolio-img hover-style another-hover-style">
+									<img src="{img}" alt="" />
+									<div class="portfolio-view">
+										<a class="img-poppu" href="{img}">
+											<i class="fa fa-search-plus"></i>
+										</a>
+									</div>
+								</div>
+								<div class="another-portfolio-title text-center">
+									<h3><a href="news-details?id={idn}">{tit}</a></h3>
+									<span>{dat}</span>
+								</div>	
+							</div>	
+						</div>
+                        <!-- END BLOCK : noticias-cols -->
+					</div>
+                    <!-- END BLOCK : noticias-rows -->
+                </div>
+
+                <!-- START BLOCK : bug -->
+                <div class="row">
+                    <div class="col-md-12 pt-30">
+                        {msg}
+                    </div>
+                </div>
+                <!-- END BLOCK : bug -->
+                
+            </div>
+        </section>

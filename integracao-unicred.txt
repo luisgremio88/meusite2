@@ -1,0 +1,47 @@
+5a7e414464ba41ef893fdad03c910347
+c9faddb07974464cadfc8a1765eb68b0
+4b910fd647a4491e958f1509d5533bb6
+b54db84b02204a588bd458aefbcb6368
+8a0e977ab7364b88b9271f2545a80336
+e2f378a807e0430e8b9260bbe88fffbe
+7db26c8d14684fe4a73c7394d591fd3a
+bcf4a5f9d9594d87a626f5e6e5d8fc91
+{"message":"Erro ao validar atributo.","timestamp":1717368165381,"httpStatus":422,"url":"https://servicos-hlg.e-unicred.com.br/cobranca/v2/beneficiarios/162B62923A8B46CFB5E567A23E2D621A/titulos","body":[{"field":"valor","message":"O valor do título deve ser informado."},{"field":"vencimento","message":"A data de vencimento do título é obrigatória."}]}
+89c27bc820a0478284dd988b9c453e80
+{"message":"O nosso número [10000010550] já está sendo usado em outro título para o beneficiário [80003927].","timestamp":1717440533487,"httpStatus":422,"url":"https://servicos-hlg.e-unicred.com.br/cobranca/v2/beneficiarios/162B62923A8B46CFB5E567A23E2D621A/titulos"}
+708cb72a707d40de942be05c25e45cf2
+d83f9ddf042f4edb94e27c9d007c19e2
+{"message":"JSON parse error: Can not deserialize value of type java.time.LocalDate from String \"--\": Text '--' could not be parsed at index 1; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Can not deserialize value of type java.time.LocalDate from String \"--\": Text '--' could not be parsed at index 1\n at [Source: java.io.PushbackInputStream@5ceebeef; line: 1, column: 90] (through reference chain: br.com.unicred.cobranca.titulo.facade.web.v2.dto.TituloRequestV2[\"vencimento\"])","timestamp":1717771112134,"httpStatus":400,"url":"/cobranca/v2/beneficiarios/162B62923A8B46CFB5E567A23E2D621A/titulos"}
+{"message":"JSON parse error: Can not deserialize value of type java.time.LocalDate from String \"--\": Text '--' could not be parsed at index 1; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Can not deserialize value of type java.time.LocalDate from String \"--\": Text '--' could not be parsed at index 1\n at [Source: java.io.PushbackInputStream@6ab886d; line: 1, column: 90] (through reference chain: br.com.unicred.cobranca.titulo.facade.web.v2.dto.TituloRequestV2[\"vencimento\"])","timestamp":1717771230995,"httpStatus":400,"url":"/cobranca/v2/beneficiarios/162B62923A8B46CFB5E567A23E2D621A/titulos"}
+{"message":"Erro ao validar atributo.","timestamp":1717771512978,"httpStatus":422,"url":"https://servicos-hlg.e-unicred.com.br/cobranca/v2/beneficiarios/162B62923A8B46CFB5E567A23E2D621A/titulos","body":[{"field":"vencimento","message":"A data de vencimento do título é obrigatória."}]}
+b6c15ae28b0e4c6b99b89328977989eb
+{"message":"O nosso número [10000010003] já está sendo usado em outro título para o beneficiário [80003927].","timestamp":1717771932110,"httpStatus":422,"url":"https://servicos-hlg.e-unicred.com.br/cobranca/v2/beneficiarios/162B62923A8B46CFB5E567A23E2D621A/titulos"}
+{"message":"O nosso número [10000010003] já está sendo usado em outro título para o beneficiário [80003927].","timestamp":1717772109446,"httpStatus":422,"url":"https://servicos-hlg.e-unicred.com.br/cobranca/v2/beneficiarios/162B62923A8B46CFB5E567A23E2D621A/titulos"}
+{"message":"O nosso número [10000011743] já está sendo usado em outro título para o beneficiário [80003927].","timestamp":1717772179049,"httpStatus":422,"url":"https://servicos-hlg.e-unicred.com.br/cobranca/v2/beneficiarios/162B62923A8B46CFB5E567A23E2D621A/titulos"}
+{"message":"O nosso número [10000011751] já está sendo usado em outro título para o beneficiário [80003927].","timestamp":1717772251181,"httpStatus":422,"url":"https://servicos-hlg.e-unicred.com.br/cobranca/v2/beneficiarios/162B62923A8B46CFB5E567A23E2D621A/titulos"}
+c1de0735962c4a359cba7ab8e167226f
+7735c02638cb409690b055e0d0d250a8
+fb4784b30c2d4ce0b26029dbc5d4bb7f
+{"message":"O nosso número [90000001770] já está sendo usado em outro título para o beneficiário [80003927].","timestamp":1719255264414,"httpStatus":422,"url":"https://servicos-hlg.e-unicred.com.br/cobranca/v2/beneficiarios/162B62923A8B46CFB5E567A23E2D621A/titulos"}
+4cbec517579f4225ad28888b32ea4720
+{"message":"O nosso número [90000001789] já está sendo usado em outro título para o beneficiário [80003927].","timestamp":1720106648724,"httpStatus":422,"url":"https://servicos-hlg.e-unicred.com.br/cobranca/v2/beneficiarios/162B62923A8B46CFB5E567A23E2D621A/titulos"}
+985b15df8a354462bd79fc09f4dc394b
+4bf23c9982e74df7b7dd5772870ca9e0
+{"message":"JSON parse error: Can not deserialize value of type java.time.LocalDate from String \"--\": Text '--' could not be parsed at index 1; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Can not deserialize value of type java.time.LocalDate from String \"--\": Text '--' could not be parsed at index 1\n at [Source: java.io.PushbackInputStream@71421507; line: 1, column: 88] (through reference chain: br.com.unicred.cobranca.titulo.facade.web.v2.dto.TituloRequestV2[\"vencimento\"])","timestamp":1723489828852,"httpStatus":400,"url":"/cobranca/v2/beneficiarios/162B62923A8B46CFB5E567A23E2D621A/titulos"}
+177285d7fd3e4220b4cbcd602d89d1db
+{"message":"O nosso número [90000000014] já está sendo usado em outro título para o beneficiário [80003927].","timestamp":1723490330728,"httpStatus":422,"url":"https://servicos-hlg.e-unicred.com.br/cobranca/v2/beneficiarios/162B62923A8B46CFB5E567A23E2D621A/titulos"}
+81d0b355c6994d55974bcd041f889b6a
+2497294f023941e1a1a999f9dbf70712
+475bd887ba9741be8174652a8726e7d8
+{"message":"O nosso número [90000000049] já está sendo usado em outro título para o beneficiário [80003927].","timestamp":1723558514048,"httpStatus":422,"url":"https://servicos-hlg.e-unicred.com.br/cobranca/v2/beneficiarios/162B62923A8B46CFB5E567A23E2D621A/titulos"}
+{"message":"O nosso número [90000000049] já está sendo usado em outro título para o beneficiário [80003927].","timestamp":1723559386389,"httpStatus":422,"url":"https://servicos-hlg.e-unicred.com.br/cobranca/v2/beneficiarios/162B62923A8B46CFB5E567A23E2D621A/titulos"}
+{"message":"O nosso número [90000000022] já está sendo usado em outro título para o beneficiário [80003927].","timestamp":1723559474604,"httpStatus":422,"url":"https://servicos-hlg.e-unicred.com.br/cobranca/v2/beneficiarios/162B62923A8B46CFB5E567A23E2D621A/titulos"}
+{"message":"O nosso número [90000000030] já está sendo usado em outro título para o beneficiário [80003927].","timestamp":1723559488237,"httpStatus":422,"url":"https://servicos-hlg.e-unicred.com.br/cobranca/v2/beneficiarios/162B62923A8B46CFB5E567A23E2D621A/titulos"}
+{"message":"O nosso número [90000000049] já está sendo usado em outro título para o beneficiário [80003927].","timestamp":1723559491149,"httpStatus":422,"url":"https://servicos-hlg.e-unicred.com.br/cobranca/v2/beneficiarios/162B62923A8B46CFB5E567A23E2D621A/titulos"}
+d3077601a6f94defbfd4aff74cc3156f
+6264918b46c54690a06cc7ee8b8f8801
+183ae004cabe470f9ded0eb79133c037
+4123950ab33b4a9d8a647078a6b2a10d
+820f07a7f8b74fbb8035989a4fba6ae3
+{"timestamp":"2024-08-13T14:51:06.780+0000","status":500,"error":"Internal Server Error","exception":"java.lang.IllegalArgumentException","message":"JWT String argument cannot be null or empty.","path":"/cobranca/v2/beneficiarios/162B62923A8B46CFB5E567A23E2D621A/titulos"}
+30b4563132ad4d8ab8f3f67459bc4b43

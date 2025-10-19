@@ -1,0 +1,22 @@
+#Retira extensão arquivos .php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+#Força utilização https
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+RewriteEngine On
+RewriteRule ^associados/cadastro associados-cadastro.php [NC,L]
+RewriteRule ^jornalistas/cadastro jornalistas-cadastro.php [NC,L]
+RewriteRule ^associados/atualiza associados-atualiza.php [NC,L]
+
+RewriteRule ^institucional/codigodeetica institucional-codigo-de-etica.php [NC,L]
+RewriteRule ^institucional/quemsomos institucional-quem-somos.php [NC,L]
+RewriteRule ^institucional/estatuto institucional-estatuto.php [NC,L]
+RewriteRule ^institucional/sede institucional-sede.php [NC,L]
+RewriteRule ^institucional/diretoria institucional-diretoria.php [NC,L]
+RewriteRule ^institucional/expresidentes institucional-ex-presidentes.php [NC,L]
+
+RewriteRule ^links-uteis/categorias links-uteis-categorias.php [NC,L]

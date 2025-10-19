@@ -1,0 +1,119 @@
+
+		<section class="breadcrumbs-area gray-bg ptb-50 port bread-card solid-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="breadcrumbs">
+                            <h2 class="page-title">Nova Busca - 1. Solicitante</h2>
+                            <ul>
+                                <li>
+                                    <a class="active" href="#">Home</a>
+                                </li>
+                                <li>Nova Busca</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-area ptb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="conract-area-bottom">
+                            <h3 class="main-contact">Dados do Solicitante</h3>
+                            <form id="search-form" action="search-who" method="post">
+                                <input type="hidden" name="idt" id="idt" value="{idt}">
+                                <input type="hidden" name="idc" id="idc">
+
+                                <div class="row mb-20">
+                                    <div class="col-md-4">
+                                        <div class="main-input">
+                                            <input type="text" name="cpf" placeholder="CPF *" id="cpf">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-20">
+                                    <div class="col-md-4">
+                                        <div class="main-input">
+                                            <input type="text" name="nom" placeholder="Nome Solicitante" id="nom">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="main-input">
+                                            <input type="email" name="ema" placeholder="Email Solicitante" id="ema">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="main-input">
+                                            <input type="text" name="tel" placeholder="Telefone Solicitante" id="tel">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-20">
+                                    <div class="col-md-4">
+                                        <div class="main-input">
+                                            <input type="text" name="cep" placeholder="CEP *" id="cep">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-20">
+                                    <div class="col-md-6">
+                                        <div class="main-input">
+                                            <input type="text" name="end" placeholder="Endereço" id="end">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="main-input">
+                                            <input type="text" name="nro" placeholder="Número" id="nro">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="main-input">
+                                            <input type="text" name="com" placeholder="Complemento" id="com">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-20">
+                                    <div class="col-md-4">
+                                        <div class="main-input">
+                                            <input type="text" name="bai" placeholder="Bairro" id="bai">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="main-input">
+                                            <input type="text" name="cid" placeholder="Cidade" id="cid">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="main-input">
+                                            <input type="text" name="est" placeholder="Estado" id="est">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-20">
+                                    <div class="col-md-12">
+                                        <div class="text-leave2 text-right">
+                                            <button type="submit" class="submit">Prosseguir (dados)</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <p class="form-messege"></p>
+                        </div>
+
+                        <!-- START BLOCK : bug -->
+                        {msg}
+                        <!-- END BLOCK : bug -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		

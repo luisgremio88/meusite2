@@ -1,0 +1,52 @@
+
+        <section class="breadcrumbs-area gray-bg ptb-50 port bread-card solid-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="breadcrumbs">
+                            <h2 class="page-title">Gestão - Financeiro</h2>
+                            <ul>
+                                <li>
+                                    <a class="active" href="home">Home</a>
+                                </li>
+                                <li>Financeiro</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		<section class="contact-area ptb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 pt-30">
+                        <h3>CONTAS A PAGAR E RECEBER</h3>
+                        <table class="table table-striped table-hover table-responsive">
+                            <tr>
+                                <th>ID</th>
+                                <th>Serviço</th>
+                                <th>Data</th>
+                                <th>Valor</th>
+                                <th>Forma Pgto</th>
+                                <th>Status</th>
+                            </tr>
+                            <!-- START BLOCK : contas -->
+                            <tr>
+                                <td>{idb}</td>
+                                <td>{dat}</td>
+                                <td>{nomtes}</td>
+                                <td>{cpftes}</td>
+                                <td>{nomcli}</td>
+                                <td>{cpfcli}</td>
+                            </tr>
+                            <!-- END BLOCK : contas -->
+                        </table>
+
+                        <!-- START BLOCK : bug -->
+                        {msg}
+                        <!-- END BLOCK : bug -->
+                    </div>
+                </div>
+            </div>
+        </section>

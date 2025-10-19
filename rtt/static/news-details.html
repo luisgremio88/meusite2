@@ -1,0 +1,78 @@
+
+        <section class="breadcrumbs-area gray-bg ptb-50 port bread-card solid-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="breadcrumbs">
+                            <h2 class="page-title">Notícias Restritas ao Associado</h2>
+                            <ul>
+                                <li>
+                                    <a class="active" href="news">Notícia</a>
+                                </li>
+                                <li>Detalhe da Notícia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		<section class="contact-area ptb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="blog-details-left">
+                            <div class="blog-part">
+                                <!-- START BLOCK : temimg -->
+                                <div class="blog-img">
+                                    <img src="{img}" alt="">
+                                </div>
+                                <!-- END BLOCK : temimg -->
+                                <div class="blog-info">
+                                    <div class="blog-meta">
+                                        <span>
+                                            <i class="fa fa-user"></i>
+                                            {idn}
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            {dat}
+                                        </span>
+                                        <span>
+                                            <a href="{url}">
+                                                <i class="fa fa-comment" aria-hidden="true"></i>
+                                                {url}
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <h3>{tit}</h3>
+                                    <p>{rsm}</p>
+                                    <p>{txt}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="blog-right-sidebar">
+                            <div class="blog-right-sidebar-top mb-60">
+                                <h3 class="leave-comment-text">Últimas Notícias</h3>
+                                <ul>
+                                    <!-- START BLOCK : noticias-ult -->
+                                    <li><a href="news-details?id={idn}">{tit}</a></li>
+                                    <!-- END BLOCK : noticias-ult -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- START BLOCK : bug -->
+                <div class="row">
+                    <div class="col-md-12 pt-30">
+                        {msg}
+                    </div>
+                </div>
+                <!-- END BLOCK : bug -->
+                
+            </div>
+        </section>
